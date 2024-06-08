@@ -7,7 +7,7 @@ app.use(cors())
 const {data} =require('./data')
 const datamodel=require('./models/data')
 
-mongoose.connect('mongodb://localhost:27017/testdb').then(()=>{
+mongoose.connect('mongodb+srv://admin:sunsetwest1234RRR@royoapi.3qmdrjq.mongodb.net/blackcoffer?retryWrites=true&w=majority&appName=RoyoApi').then(()=>{
     datamodel.insertMany(data).then(()=>{
         console.log('success')
     })
