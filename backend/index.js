@@ -3,7 +3,9 @@ const mongoose=require('mongoose')
 const cors=require('cors')
 const app=express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://blackcoffer-assignment-rldy.onrender.com' 
+}))
 const {data} =require('./data')
 const datamodel=require('./models/data')
 
