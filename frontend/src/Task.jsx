@@ -21,7 +21,7 @@ const Task = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get('http://localhost:8080/fetchdata');
+      const result = await axios.get('https://blackcoffer-nu.vercel.app/fetchdata');
       setData(result.data);
       setFilteredData(result.data);
     };
